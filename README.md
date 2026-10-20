@@ -54,5 +54,5 @@ I prototyped a little stand for the Uno to hold it upright:
 <img width="1368" height="1824" alt="image" src="https://github.com/user-attachments/assets/a78a01c0-2e10-4568-89f3-0ec21154d627" />
 
 
-There is more detail in a bulk comment at the top of Palmetto-III.ino
-Todo: links
+There is more detail in a bulk comment at the top of Palmetto-III.ino and additional photos on [Flickr](https://www.flickr.com/gp/funnypolynomial/75ESyw78ZU)
+
