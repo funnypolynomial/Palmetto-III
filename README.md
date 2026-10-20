@@ -9,7 +9,7 @@ I recently unearthed my old Palm III from the late 90's and it made me think of 
 It has enough of the look and feel of a Palm to achieve my goal. 
 **Simulation not emulation.**
 
-[Youtube Video]([https://www.example.com](https://youtu.be/VJ-6srZ3FKI))
+[YouTube video](https://youtu.be/VJ-6srZ3FKI)
 
 The LCD is 320x480 so the Palm's 160x160 screen fits nicely with a scale factor of x2.  The Graffiti area is proportionately a little taller. The apps form has just my program ("Count Down") and a Prefs app. The latter sets the date, time and calibrates the resistive touch ("Digitizer"):
 <img width="1536" height="2048" alt="image" src="https://github.com/user-attachments/assets/f69b4ead-c67d-4f10-9d99-537dadfd932c" />
