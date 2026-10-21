@@ -9,7 +9,7 @@
 #include "AppsForm.h"
 #include "PrefsApp.h"
 #include "tqCDApp.h"
-#include "tQCDGraphicsData.h"
+#include "tqCDGraphicsData.h"
 
 void RunAboutForm();
 void RunDetailsForm(uint8_t EventNum);
