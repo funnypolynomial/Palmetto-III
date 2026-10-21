@@ -48,7 +48,7 @@
 // one setting: PREF_TQCD_SHOW_NEGATIVE_COUNTS. Note that touching the screen while the code starts up resets the touch calibration.
 // Font and image pixel data is encoded in PROGMEM code files from input images using Python scripts (see the Assets subdirectory).
 // A driving concern in the writing of this has been keeping the code/memory footprint low since the Uno was my primary target.
-// The fonts are limited, to save program space, not all chars are defined. For example LargeBold only as "IPaelmot" for 
+// The fonts are limited, to save program space, not all chars are defined. For example LargeBold only has "IPaelmot" for 
 // "Palmetto-III" on the splash/about.
 //
 // === What it's *NOT*
