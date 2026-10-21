@@ -25,7 +25,8 @@ Countdown shows days, hours, minutes and seconds counting up from, or down to, u
 Clicking on an event control brings up a details form:
 <img width="1536" height="2048" alt="image" src="https://github.com/user-attachments/assets/82cecf6f-372f-4424-9842-1952c50f5e18" />
 
-*There is no Graffiti support!* Instead the event name is entered using a small keyboard (optionally) labelled with Graffiti glyphs as a homage. Text entry is basic – append and backspace only.
+*There is no Graffiti support!* Instead the event name is entered using a small keyboard (optionally) labelled with Graffiti glyphs as a homage. Text entry is basic – append and backspace only. Note that fonts are limited, to save program space, not all chars are defined. For example LargeBold only has "IPaelmot" for "Palmetto-III" on the splash/about.
+
 The event date is entered via a small "standard" form.  
 <img width="1536" height="2048" alt="image" src="https://github.com/user-attachments/assets/3a1e31fe-ea69-4769-b07a-5a7238d02901" />
 
@@ -36,6 +37,7 @@ The event time form has a None option:
 
 Hitting Menu brings up Count Down's About:
 <img width="1536" height="2048" alt="image" src="https://github.com/user-attachments/assets/3ff865c3-8541-4ba1-b85d-10ee4f011e3d" />
+The Count Down logic has been written from scratch, I paid little attention to my original code, other than the resources. I'm not faking original API calls.
 
 I came up with an identity for my Palm developments. The *triquetral* is a bone in the hand, if not actually the palm, and has *three* in the name.  My younger self was inordinately pleased with this.
 
