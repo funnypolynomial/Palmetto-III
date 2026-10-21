@@ -71,9 +71,17 @@ def EscapeChars(str):
             result = result + ch
     return result
 
+def RangeChar(ch):
+    # fix comma or quotes as arg
+    if ch == ",":
+        return "\\054"      # octal comma
+    elif ch == "\"":
+        return "\\134\\042" # octal backslash, double quote
+    else:
+        return ch
+
 def InsertRanges(str):
     # inserts RANGE macros for runs of sequential chars longer than 3
-    # NOTE: this will need some work if " is ever in a map
     mapStr = ""
     prevCh = -999
     rangeStr = ""
@@ -93,7 +101,7 @@ def InsertRanges(str):
                 if len(rangeStr) < 3: # too short
                     mapStr += "\"" + rangeStr + "\" "
                 else:
-                    mapStr += " RANGE(" + rangeStr[0] + ", " + rangeStr[len(rangeStr)-1] + ") "
+                    mapStr += " RANGE(" + RangeChar(rangeStr[0]) + ", " + RangeChar(rangeStr[len(rangeStr)-1]) + ") "
                 rangeStr = ""
             nonRangeStr += ch
         prevCh = ch
@@ -105,7 +113,7 @@ def InsertRanges(str):
         if len(rangeStr) < 3: # too short
             mapStr += "\"" + rangeStr + "\" "
         else:
-            mapStr += " RANGE(" + rangeStr[0] + ", " + rangeStr[len(rangeStr)-1] + ") "
+            mapStr += " RANGE(" + RangeChar(rangeStr[0]) + ", " + RangeChar(rangeStr[len(rangeStr)-1]) + ") "
         rangeStr = ""
     mapStr = mapStr.rstrip()
     mapStr = mapStr.replace("\" \"", "")
@@ -189,7 +197,7 @@ EncodeChars(20, 100,        # pixel coords of first character cell
             2,              # height of text descender
             ' ', '\xBB',    # first & last char
             "Standard",     # fontname
-            "-./0123456789:ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz\x85\xA9\xBB",      # map (ellipsis, copyright, right chevron)
+            ",-./0123456789:ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz\x85\xA9\xBB",      # map (ellipsis, copyright, right chevron)
             4)
 
 # ******* Large *******

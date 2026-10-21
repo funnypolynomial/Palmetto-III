@@ -6,10 +6,21 @@ namespace FontData
 #define RANGE(_from, _to) #_to #_from
 
 // (created from "font_standard.png")
-// Map: "-./0123456789:ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz\205\251\273"
-static const char pStandardMap_P[] PROGMEM =  RANGE(-, :) RANGE(A, Z) RANGE(a, z) "\205\251\273";
+// Map: ",-./0123456789:ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz\205\251\273"
+static const char pStandardMap_P[] PROGMEM =  RANGE(\054, :) RANGE(A, Z) RANGE(a, z) "\205\251\273";
 static const unsigned char pStandardFont_P[] PROGMEM =
 {
+  // ,
+  0b00000000, 
+  0b00000000, 
+  0b00000000, 
+  0b00000000, 
+  0b00000000, 
+  0b00000000, 
+  0b00000000, 
+  0b01000000, 
+  0b10000000, 
+  0b00000000, 
   // -
   0b00000000, 
   0b00000000, 
@@ -769,7 +780,7 @@ static const unsigned char pStandardFont_P[] PROGMEM =
   0b10100000, 
   0b00000000, 
   0b00000000, 
-}; // 1320 bytes
+}; // 1330 bytes
 
 // (created from "font_large.png")
 // Map: "0123456789ABCDEFGHIJKLNOPQRSTUVXYZabcdefghijklnopqrstuvxyz"
@@ -3373,6 +3384,6 @@ static const unsigned char pGraffitiThinFont_P[] PROGMEM =
   0b00000001, 
 }; // 340 bytes
 
-// total 6033 bytes
+// total 6043 bytes
 
 }
