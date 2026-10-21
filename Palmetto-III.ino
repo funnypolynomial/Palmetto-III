@@ -48,6 +48,8 @@
 // one setting: PREF_TQCD_SHOW_NEGATIVE_COUNTS. Note that touching the screen while the code starts up resets the touch calibration.
 // Font and image pixel data is encoded in PROGMEM code files from input images using Python scripts (see the Assets subdirectory).
 // A driving concern in the writing of this has been keeping the code/memory footprint low since the Uno was my primary target.
+// The fonts are limited, to save program space, not all chars are defined. For example LargeBold only as "IPaelmot" for 
+// "Palmetto-III" on the splash/about.
 //
 // === What it's *NOT*
 // This isn't the Palm OS!  It's a simulation of a tiny fraction of it, only the bits I needed to scratch the itch
@@ -70,6 +72,8 @@
 // Day number changes and the Seconds display simply cycles through 0..9.  Clicking on the Details button brings up the 
 // Event Details form. This has a Name field and buttons for setting the event's Date and Time.  These bring up my 
 // version of the "standard" forms.  The time-setting form has an optional "None" button. 
+// The Count Down logic has been written from scratch, I paid little attention to my original code, other than the resources. 
+// I'm not faking original API calls.
 //
 // === Triquetral? 
 // Note that the About box refers to "Triquetral Software" and has an image of the bones of the hand with one highlighted.
